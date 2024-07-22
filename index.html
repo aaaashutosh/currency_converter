@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="https://media.istockphoto.com/id/1281579246/vector/back-money-refund-icon-orange-version.jpg?s=612x612&w=0&k=20&c=-I-f-zbqlWxNAJWuN4tGUIPxKckyRFKNFaABpZIByxY=" alt="" srcset="">
+        <h1>Currency Converter</h1>
+        <div class="converter">
+            <input type="number" id="inputValue" placeholder="Enter the value to be converted">
+            
+            <select id="inputCurrency">
+                <option value="NPR">NPR</option>
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="Riyal">Riyal</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <p>To</p>
+            <select id="outputCurrency">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="Riyal">Riyal</option>
+                <option value="NPR">NPR</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <button onclick="convert()">Convert</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Author: <a href="https://aashutoshkhatiwada.com.np/" target="_blank">Aashutosh Khatiwada</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
